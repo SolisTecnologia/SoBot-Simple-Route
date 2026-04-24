@@ -39,7 +39,18 @@ import serial
 
 The ''time'' library is needed to generate time delays and the ''serial'' library for serial/usb Raspberry connection with the robot controller driver.
 
+### ⚠️ Important
 
+We recommend **avoiding general library updates** (`pip install --upgrade`).
+
+**Why?**  
+Some libraries (e.g. NumPy) introduce significant changes between versions that can break code that was previously working perfectly.
+
+### ✅ Recommended Best Practice:
+
+- Update **libraries individually**, one at a time:
+  ```bash
+  pip install numpy==2.2.6   # example of a stable version
 
 For more information about the commands used, check the Robot Commands Reference Guide.
 
